@@ -17,7 +17,7 @@ var allUsers: [DatabaseUser] = [
     DatabaseUser(name: "Chris", isPremium: false, order: 2)
 ]
 
-// Filter
+// Filtering
 
 //using for loop
 /*

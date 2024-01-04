@@ -18,11 +18,12 @@ var allUsers: [DatabaseUser] = [
 ]
 
 
-// Two pieces of Data (requires two arguments)
+// Sorting. Two pieces of Data (requires two arguments)
 var orderedUsers: [DatabaseUser] = allUsers.sorted { user1, user2 in
     return user1.order < user2.order
 }
 
+// shorthand version
 var orderedUsers2: [DatabaseUser] = allUsers.sorted { $0.order < $1.order }
 
 

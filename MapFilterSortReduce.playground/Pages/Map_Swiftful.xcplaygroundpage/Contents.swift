@@ -17,9 +17,12 @@ var allUsers: [DatabaseUser] = [
     DatabaseUser(name: "Chris", isPremium: false, order: 2)
 ]
 
-
+// Mapping
 var userNames: [String] = allUsers.map { user in
     return user.name
 }
+
+//shorthand version
+var userNames2: [String] = allUsers.map { $0.name }
 
 print(userNames)
